@@ -9,6 +9,8 @@ import { Exchange, Loader, WalletButton } from "./components";
 const App = () => {
   const { account } = useEthers();
   const [loading, pools] = usePools();
+  console.log('loading', loading);
+  console.log('pools', pools);
 
   return (
     <div className={styles.container}>
